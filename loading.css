@@ -88,10 +88,20 @@ BODY
 	{
 		-webkit-transform: rotateZ(0deg);
 	}
+	
+	25%
+	{
+		-webkit-transform: rotateZ(90deg);
+	}
 
 	50%
 	{
 		-webkit-transform: rotateZ(180deg);
+	}
+	
+	75%
+	{
+		-webkit-transform: rotateZ(270deg);
 	}
 
 	100%
