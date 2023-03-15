@@ -8,12 +8,23 @@ BODY
 	background-size: cover;
 }
 
+#textcontainer
+{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	top: 65%;
+	margin-top: -120px;
+	margin-left: -150px;
+	width: 300px;
+}
+
 #container
 {
 	position: fixed;
 	text-align: center;
 	left: 50%;
-	top: 45%;
+	top: 40%;
 	margin-top: -120px;
 	margin-left: -150px;
 	width: 300px;
@@ -24,7 +35,7 @@ BODY
 	position: fixed;
 	text-align: center;
 	left: 50%;
-	top: 85%;
+	top: 20%;
 	margin-top: -120px;
 	margin-left: -150px;
 	width: 300px;
@@ -92,14 +103,16 @@ BODY
 .walk
 {
 	-webkit-animation-name: walk;
-	-webkit-animation-duration: 1.8182s;
+	/*-webkit-animation-duration: 1.8182s;*/
+	-webkit-animation-duration: 8s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: nonlinear;
+	/*-webkit-animation-timing-function: nonlinear;*/
+	-webkit-animation-timing-function: linear;
 	-webkit-perspective: 6000px;
 	text-align: center;
 	background-color: #3A3;
-	width: 180px;
-	height: 20px;
+	width: 160px;
+	height: 40px;
 	color: #B00;
 	font-size: 16px;
 	font-family: arial;
