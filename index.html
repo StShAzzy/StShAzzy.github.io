@@ -13,7 +13,7 @@
 			<!--iframe width="640" height="480" src="https://www.youtube.com/embed/8LDbTcW6rIA"> 
 			</iframe-->
 			<div id="textcontainer">
-				<div class="walk" id="textinho">você é fraco... te falta criatividade.</div>
+				<div class="walk" id="textinho">Watashi o mi teru janaidesu ka!</div>
 			</div>
 			<div id="container">
 
@@ -94,9 +94,28 @@
 			{
 				//$("#spambox").prepend( status + "<br>");
 			}
-			var msgs = ['você é fraco... te falta CAVALO!', 'Carregando Mensagem...', 'Mathx é mesmo um Heicarim main?', 'Mario Paint - Creative Exercise', 'you spin me right round', 'we do a specific amount of trolling', 'temos que abolir o will da existencia.', 'eu vou matar 1 se eu ver dando propkill']
-			$("#textinho").text(msgs[Math.floor(Math.random() * msgs.length)])
-			
+			var msgs = ['você é fraco... te falta CAVALO!', 'Carregando Mensagem...', 'Mathx é mesmo um Heicarim main?', 'Mario Paint - Creative Exercise', 'you spin me right round, baby, right round, like a record baby, right round round round', 'we do a quite a considerable amount of mental trickery and mockery of those who are unfortunate enough to fall victim to our clever little trap of social teasing', 'temos que abolir o will da existencia.', 'eu vou matar 1 se eu ver dando propkill', 'gata o amor é lindo como um acidente de transito, então deixa eu bater meu caminhão em você']
+			var rng = Math.floor(Math.random() * msgs.length)
+			//$("#textinho").text(msgs[Math.floor(Math.random() * msgs.length)])
+			switch (rng) {
+				case 4:
+					$(".walk").css("height","100px")
+					$(".walk").css("-webkit-animation-duration","10s")
+					break;
+				case 5:
+					$(".walk").css("height","120px")
+					$(".walk").css("width","240px")
+					$(".walk").css("-webkit-animation-duration","16s")
+					break;
+				case 8:
+					$(".walk").css("height","100px")
+					$(".walk").css("-webkit-animation-duration","10s")
+					break;
+				default:
+					console.log('caso padrão executado')
+					break;
+			}
+			$("#textinho").text(msgs[rng])
 		</script>
 
 	</body>
