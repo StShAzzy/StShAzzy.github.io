@@ -94,8 +94,9 @@
 			{
 				//$("#spambox").prepend( status + "<br>");
 			}
-			var msgs = ['você é fraco... te falta CAVALO!', 'Carregando Mensagem...', 'Mathx é mesmo um Heicarim main?', 'Mario Paint - Creative Exercise', 'you spin me right round, baby, right round, like a record baby, right round round round', 'we do a quite a considerable amount of mental trickery and mockery of those who are unfortunate enough to fall victim to our clever little trap of social teasing', 'temos que abolir o will da existencia.', 'eu vou matar 1 se eu ver dando propkill', 'gata o amor é lindo como um acidente de transito, então deixa eu bater meu caminhão em você']
+			var msgs = ['você é fraco... te falta CAVALO!', 'Carregando Mensagem...', 'Mathx é mesmo um Heicarim main?', 'Mario Paint - Creative Exercise', 'you spin me right round, baby, right round, like a record baby, right round round round', 'we do a quite a considerable amount of mental trickery and mockery of those who are unfortunate enough to fall victim to our clever little trap of social teasing', 'temos que abolir o will da existencia.', 'eu vou matar 1 se eu ver dando propkill', 'gata o amor é lindo como um acidente de transito, então deixa eu bater meu caminhão em você', 'Mathx é realmente da frança?', 'porque ainda falam do SvB ser SerVer de Baitola?..ah', 'como caralhos tira a musica do spawn?', 'tudo que você tinha q fazer, era seguir a porra da bomba, Scout!']
 			var rng = Math.floor(Math.random() * msgs.length)
+			//var rng = 9;
 			//$("#textinho").text(msgs[Math.floor(Math.random() * msgs.length)])
 			switch (rng) {
 				case 4:
@@ -109,6 +110,13 @@
 					break;
 				case 8:
 					$(".walk").css("height","100px")
+					$(".walk").css("-webkit-animation-duration","10s")
+					break;
+				case 10:
+					$(".walk").css("height","60px")
+					break;
+				case 12:
+					$(".walk").css("height","75px")
 					$(".walk").css("-webkit-animation-duration","10s")
 					break;
 				default:
